@@ -33,11 +33,23 @@ public class ArrayListChallenges
 						System.out.println(sort);
 					}
 				
-				for (String fL : farm)
+				System.out.println("\nYour first and last words, alphabetically:");
+				System.out.println(farm.get(0) + ", " + (farm.get(9)));
+				
+				
+				for (int i = farm.size()-1; i >= 0; i--)
 					{
-						int first = fL.length() -1; 
-						System.out.println("\n" + first);
+						String currentLetter = farm.get(0);
+						
+						if (currentLetter == farm.get(i))
+							{
+								farm.remove(currentLetter);
+								System.out.println(farm);
+							}
+					
 					}
+			
+				
 
 			}
 
