@@ -41,11 +41,11 @@ public class ArrayListChallenges
 					{
 						String currentLetter = farm.get(0);
 						
-						if (currentLetter == farm.get(i))
+						if (farm.get(i) == currentLetter)
 							{
 								farm.remove(currentLetter);
-								System.out.println(farm);
 							}
+						System.out.println(farm);
 					
 					}
 			
